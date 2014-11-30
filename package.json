@@ -1,0 +1,17 @@
+{
+  "name": "unitbench",
+  "version": "0.1.0",
+  "description": "Unit benchmark class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bench",
+    "benchmark",
+    "code",
+    "bench"
+  ],
+  "author": "Chugaenko Yuriy",
+  "license": "ISC"
+}
