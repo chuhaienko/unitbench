@@ -1,10 +1,20 @@
 var Bench = require('./index.js');
 
-var b1 = new Bench();
+var b = new Bench();
+b.bench(1e6,
+	function () {
+		var x = Math.random().toString().split('5').reverse();
+	},
+	function (result) {
+		console.log(result);
+	}
+);
 
-b1.start();
-for (var i = 0; i < 10000000; i++) {
-        var x = Math.random();
-}
-b1.end();
-console.log(b1.delta());
+b.bench(1e6,
+	function () {
+		var x = Math.random().toString().split('').reverse();
+	},
+	function (result) {
+		console.log(result);
+	}
+);
